@@ -20,14 +20,15 @@ class _HomeScreenState extends State<HomeScreen> {
         //leading: Image.network('https://media.gq-magazine.co.uk/photos/5e8352568714920008e10d5b/4:3/w_1440,h_1080,c_limit/20200331-coffee-05.jpg'),
         title: Center(
           child: Container(
-            padding: EdgeInsets.only(top: 7,right: 60,left:60,bottom: 7 ),
+            padding: const EdgeInsets.only(top: 7,right: 60,left:60,bottom: 7 ),
               decoration:  BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
                 gradient: LinearGradient(
                   begin: Alignment.bottomRight,
                       colors: [
-                        Colors.black.withOpacity(.9),
-                    Colors.white.withOpacity(.2)
+                        Colors.black.withOpacity(.7),
+                    //Colors.red.withOpacity(.9),
+                        Colors.white.withOpacity(.4)
                     ]
                 )
               ),
@@ -53,15 +54,15 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
 
         child: GridView.count(crossAxisCount: 2,
-            children: ColorsList.map((coloritem) => InkWell(
+            children: colorsList.map((colorItem) => InkWell(
               onTap: () {
-                Navigator.push(context,MaterialPageRoute(builder:(context) => ColorS(coloritem),));
+                Navigator.push(context,MaterialPageRoute(builder:(context) => ColorS(colorItem),));
 
               },
               child: Container(
-                margin: EdgeInsets.all(20),
+                margin: const EdgeInsets.all(20),
                 decoration: BoxDecoration(
-                  color: coloritem,
+                  color: colorItem,
                   borderRadius: BorderRadius.circular(20),
                   boxShadow: const [
                     BoxShadow(
