@@ -1,11 +1,10 @@
-import 'dart:developer';
 
 import 'package:flutter/material.dart';
 
 class ColorS extends StatelessWidget {
-   ColorS(this.screenColor,{Key? key}) : super(key: key);
+  const ColorS(this.screenColor,{Key? key}) : super(key: key);
 
-  Color screenColor;
+ final Color screenColor;
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +22,7 @@ class ColorS extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: const [
-                Text("Clic Me To Go Back",
+                Text("Click Me To Go Back",
                   style:
                   TextStyle(color:Colors.white,
                   fontWeight: FontWeight.bold,

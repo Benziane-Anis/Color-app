@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 
-List<Color> ColorsList=[
+List<Color>  colorsList=[
   Colors.black,
   Colors.teal,
   Colors.yellow,

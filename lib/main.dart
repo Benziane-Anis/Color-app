@@ -1,4 +1,3 @@
-import 'package:color_app/color.dart';
 import 'package:color_app/home_scren.dart';
 import 'package:flutter/material.dart';
 
